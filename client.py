@@ -6,7 +6,14 @@ import socket
 TCP_IP = '127.0.0.1'
 TCP_PORT = 5005
 BUFFER_SIZE = 1024
-MESSAGE = "Hello, World!"
+
+xAibo = 0
+yAibo = 0
+oAibo = 20 #orientation of aibo in degrees
+xTar = 5 
+yTar = 6
+
+MESSAGE = str(xAibo) + " " + str(yAibo) + " " + str(oAibo) + " " + str(xTar) + " " + str(yTar) 
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((TCP_IP, TCP_PORT))

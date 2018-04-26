@@ -4,13 +4,13 @@ import socket
 
 
 TCP_IP = '127.0.0.1'
-TCP_PORT = 5011
+TCP_PORT = 5015
 BUFFER_SIZE = 1024
 
 xAibo = 0
 yAibo = 0
 oAibo = 20 #orientation of aibo in degrees
-xTar = 5 
+xTar = -5 
 yTar = 6
 
 MESSAGE = str(xAibo) + " " + str(yAibo) + " " + str(oAibo) + " " + str(xTar) + " " + str(yTar) 

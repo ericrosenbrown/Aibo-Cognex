@@ -17,8 +17,10 @@ MESSAGE = str(xAibo) + " " + str(yAibo) + " " + str(oAibo) + " " + str(xTar) + "
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((TCP_IP, TCP_PORT))
-s.send(MESSAGE)
-data = s.recv(BUFFER_SIZE)
+while 1:
+    raw_input("type anything")
+    s.send(MESSAGE)
+    data = s.recv(BUFFER_SIZE)
 s.close()
 
 print "received data:", data
